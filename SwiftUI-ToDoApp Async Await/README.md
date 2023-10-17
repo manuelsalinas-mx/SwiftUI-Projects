@@ -1,8 +1,12 @@
 
 # TO-DO SwiftUI 
 
-This **To-Do** app was created using `SwiftU` completely based on `UIKit` version`
+This **To-Do** app was created using `SwiftUI` completely based on `UIKit` version`
 
+**Includes:**
+- async / await
+- @Observable macro
+- UnavaibaleContentView
 
 
 
@@ -15,6 +19,7 @@ This **To-Do** app was created using `SwiftU` completely based on `UIKit` versio
   ```
 
 ## Screenshots
+![Simulator Screen Recording - iPhone 15 Pro - 2023-10-17 at 16 08 24](https://github.com/manuelsalinas-mx/SwiftUI-Samples/assets/110424672/88dc78ed-7d70-4826-94ac-040dace32720)
 
 
 
