@@ -38,6 +38,7 @@ func fetchData<T: Codable>() async throws -> T
 func fetchToDoTasksGeneric<T: Codable>() async throws -> T 
 ```
 
+![Simulator Screen Recording - iPhone 15 Pro - 2023-10-17 at 10 26 24](https://github.com/manuelsalinas-mx/SwiftUI-Samples/assets/110424672/4f04da84-98c2-4f78-9a2a-aac80ba1917b)
 
 
 
