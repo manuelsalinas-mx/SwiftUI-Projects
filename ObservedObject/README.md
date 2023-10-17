@@ -10,7 +10,7 @@ Getting familiar with `ObservableObject`  and its `@Published` properties.
 
 # Migrating from the **Observable Object protocol** to the **Observable macro**
 
-### **BEFORE**
+### **BEFORE** (Observable Object protocol)
 ```
 class UserProgress: ObservableObject {
     @Published var score = 0
@@ -48,7 +48,7 @@ struct ContentView: View {
 ```
 
 
-### **UPDATED (Oct 17, 2023)**
+### **UPDATED (Oct 17, 2023) (Observable macro)**
 ```
 @Observable
 class UserProgress {
