@@ -7,6 +7,11 @@ This **To-Do** app was created using `SwiftUI` completely based on `UIKit` versi
 - async / await
 - @Observable macro
 - UnavaibaleContentView
+- Searchable
+- View Model
+- Text Format
+- Swipe actions
+- Refreshable
 
 
 
