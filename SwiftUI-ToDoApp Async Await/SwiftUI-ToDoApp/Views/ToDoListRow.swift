@@ -46,14 +46,10 @@ struct ToDoListRow: View {
     }
 }
 
-struct ToDoListRow_Previews: PreviewProvider {
-    static var previews: some View {
-        let detail = TaskDetails(description: "more information", day: 7)
-        let task = ToDoTask(title: "My Title", details: detail)
-        let toDo: ToDoItem = ToDoItem(task: task, isDone: false)
+#Preview {
+    let detail = TaskDetails(description: "more information", day: 7)
+    let task = ToDoTask(title: "My Title", details: detail)
+    let toDo: ToDoItem = ToDoItem(task: task, isDone: false)
 
-        ToDoListRow(item: .constant(toDo))
-    }
+    return ToDoListRow(item: .constant(toDo))
 }
-
-
