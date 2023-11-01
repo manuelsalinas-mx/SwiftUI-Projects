@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentDetailView: View {
     @AppStorage("username") var name: String = ". . . . "
     @State private var newUsername = ""
-    
+    @FocusState private var fieldIsFocused: Bool
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
         VStack {
             Text("Current value → \(name)")
@@ -29,6 +31,7 @@ struct ContentDetailView: View {
                 .onSubmit {
                     saveUsername()
                 }
+                .focused($fieldIsFocused)
 
             Button(action: {
                 saveUsername()
@@ -54,8 +57,11 @@ struct ContentDetailView: View {
     }
 
     private func saveUsername() {
+        fieldIsFocused = false
+
         guard !newUsername.isEmpty else { return }
         name = newUsername
+        dismiss()
     }
 
 }
