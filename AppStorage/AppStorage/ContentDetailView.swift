@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentDetailView: View {
-    @AppStorage("username") var name: String!
+    @AppStorage("username") var name: String = ". . . . "
     @State private var newUsername = ""
-
+    
     var body: some View {
         VStack {
             Text("Current value → \(name)")
