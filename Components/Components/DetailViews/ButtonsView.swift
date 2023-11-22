@@ -1,13 +1,15 @@
 //
-//  ContentView.swift
-//  ButtonStyles
+//  ButtonsView.swift
+//  Components
 //
-//  Created by Manuel Salinas on 10/25/23.
+//  Created by Manuel Salinas on 11/21/23.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ButtonsView: View {
+    var title: String?
+
     var body: some View {
         VStack(spacing: 20) {
             // Classic Style
@@ -79,10 +81,11 @@ struct ContentView: View {
             }
 
         }
+        .modifier(NavigationStyledModifier(title: title))
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ButtonsView()
 }
